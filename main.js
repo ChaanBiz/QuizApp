@@ -1,20 +1,26 @@
 function allowDrop(ev) {
-    ev.preventDefault();
+	ev.preventDefault();
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+	ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function drop(ev) {
-    ev.preventDefault();
-    const data = ev.dataTransfer.getData("text");
-    const htmlElement = document.getElementById(ev.path[0].id);
+	ev.preventDefault();
+	const htmlId = ev.target.id;
+	const htmlElement = document.getElementById(htmlId);
+	// if ID has the string drag, that means its a dragable div and its not supposed to be take a drop event so return immediately
+	if (htmlId.includes("drag")) return;
+	if (htmlElement.childElementCount > 0) return;
 
-    if(htmlElement.childElementCount > 0) return;
-    ev.target.appendChild(document.getElementById(data));
-    htmlElement.childNodes[0].setAttribute("style", "border: solid 1px #000; margin-bottom: 0; height: 95px;");
-    console.log(ev);
+	const data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+	htmlElement.childNodes[0].setAttribute(
+		"style",
+		"border: none; margin-bottom: 0; height: 95px;",
+	);
+	htmlElement.setAttribute("style", "border:solid 1px #000");
 }
 
 // scoring system
