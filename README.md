@@ -1,6 +1,12 @@
 # QuizApp
 
 Aim: To make a responsive Quiz App with drag and drop API
-The score must appear after the "submission" //wala pa pong score system
-// another problem is; the drag and drop API doesn't function well
+
+
+Remaining problem:
+
+The score system
+
+The score must appear after the "submission"
+Score must be stored in its database as well as the correct answers
 There will be a "home" button 
