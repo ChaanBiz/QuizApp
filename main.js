@@ -24,9 +24,40 @@ function drop(ev) {
 }
 
 // scoring system
+function scoreButton(e) {
+	var score = 0;
+  
+	//Getting text on dragging divs
+	let divs = document.getElementsByClassName("drag");
+	var answerOne = divs[6].textContent || divs[6].innerText;
+	var answerTwo = divs[0].textContent || divs[0].innerText;
+	var answerThree = divs[8].textContent || divs[8].innerText;
+	var answerFour = divs[9].textContent || divs[9].innerText;
+	var answerFive = divs[1].textContent || divs[1].innerText;
+  
+	//add score, check correct value from dragging box to dropping box
+	if (answerOne == document.getElementById("div1").getAttribute("value")) {
+	  score++;
+	}
+	if (answerTwo == document.getElementById("div2").getAttribute("value")) {
+	  score++;
+	}
+	if (answerThree == document.getElementById("div3").getAttribute("value")) {
+	  score++;
+	}
+	if (answerFour == document.getElementById("div4").getAttribute("value")) {
+	  score++;
+	}
+	if (answerFive == document.getElementById("div5").getAttribute("value")) {
+	  score++;
+	}
+  
+	//dito mo lagay yung score board para paglick nung button lalabas sya
+	console.log(score);
+  }
 
 // replay function
 
-/*function replay() {
+function replay() {
     document.getElementById('score_board').style.display = 'none';
-}*/
+}

@@ -43,16 +43,18 @@
         </div>
     </div>
 
-    <!--<div id="submit_button">
+    <div id="submit_button">
         <button type="submit" id="submit">Submit</button>
     </div>
 
-    <div id="score_board">
-        <div id="wrap">
-            <h1>SCORE</h1>
-            <div id="score">5</div>
-            <div id="btnReplay" onclick="replay()">Home</div>
+    <div id="handler">
+        <div id="score_board">
+            <div id="wrap">
+                <h1>SCORE</h1>
+                <div id="score">5</div>
+                <div id="btnReplay" onclick="replay()">Home</div>
+            </div>
         </div>
-    </div>-->
+    </div>
 </body>
 </html>

@@ -87,20 +87,17 @@ body {
   cursor: pointer;
 }
 
-#score_board {
+#handler #score_board {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   border-radius: 50px;
 }
-#score_board #wrap {
+#handler #score_board #wrap {
   border: #000 solid 7px;
   width: 70%;
   height: 70vh;
@@ -110,17 +107,17 @@ body {
   align-items: center;
   border-radius: 50px;
 }
-#score_board #wrap h1 {
+#handler #score_board #wrap h1 {
   font-weight: 700;
   font-size: 45px;
 }
-#score_board #wrap #score {
+#handler #score_board #wrap #score {
   font-weight: 800;
   font-size: 12rem;
   line-height: 10rem;
   margin-bottom: 15%;
 }
-#score_board #wrap #btnReplay {
+#handler #score_board #wrap #btnReplay {
   border: #000 solid 5px;
   padding: 5px 40px;
   border-radius: 30px;

@@ -87,43 +87,42 @@ body {
     }
 }
 
-#score_board {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 50px;
-    #wrap {
-        border: #000 solid 7px;
-        width: 70%;
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+#handler {
+    #score_board {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90vh;
+        background-color: white;
         border-radius: 50px;
-        h1 {
-            font-weight: 700;
-            font-size: 45px;
-        }
-        #score {
-            font-weight: 800;
-            font-size: 12rem;
-            line-height: 10rem;
-            margin-bottom: 15%;
-        }
-        #btnReplay {
-            border: #000 solid 5px;
-            padding: 5px 40px;
-            border-radius: 30px;
-            font-weight: 600;
-            cursor: pointer;
+        #wrap {
+            border: #000 solid 7px;
+            width: 70%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            h1 {
+                font-weight: 700;
+                font-size: 45px;
+            }
+            #score {
+                font-weight: 800;
+                font-size: 12rem;
+                line-height: 10rem;
+                margin-bottom: 15%;
+            }
+            #btnReplay {
+                border: #000 solid 5px;
+                padding: 5px 40px;
+                border-radius: 30px;
+                font-weight: 600;
+                cursor: pointer;
+            }
         }
     }
 }
